@@ -1,26 +1,19 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Cabecera from './components/cab_lateral'
+import CabeceraS from './components/cabecera'
+import Card from './components/Card'
+import Pie from './components/pie'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+function App(){
+    return(<div className="App">
+        <section className="componentes">
+            <Cabecera />
+            <CabeceraS />
+            <Card />
+            <Pie />
+        </section>
+    </div>)
 }
 
-export default App;
+export default App
